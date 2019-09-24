@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: my-app-name
+    spec:
+      containers:
+        - name: my-container-name
+          image: 012345678921.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest
+          ports:
+          - containerPort: 80
