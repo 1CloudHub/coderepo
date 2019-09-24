@@ -150,10 +150,10 @@ Now, edit the application pipeline to add an additional source stage.
 	4. Choose the existing source action and click on edit icon to update the Output artifacts.
 	5. Update the Output artifacts as BaseImage and then Save. 
 	6. Add action, and then enter a name for the action. (Eg. application)
-		a.	For Action provider, choose **AWS CodeCommit**. 
-		b.	For Repository name, choose the repository where you have already pushed application source code. 
-		c.	For Branch name, choose the branch. (Eg. Master) 
-		d.	For Output artifacts, specify SourceArtifact, and then choose Save.
+		a. For Action provider, choose **AWS CodeCommit**. 
+		b. For Repository name, choose the repository where you have already pushed application source code. 
+		c. For Branch name, choose the branch. (Eg. Master) 
+		d. For Output artifacts, specify SourceArtifact, and then choose Save.
 	7. Click on Save to update the changes.
 	
 
@@ -180,3 +180,7 @@ Now, execute the deployment scripts from application-deployment folder to instal
 `$ kubectl create -f my-dep.yaml `
 	
 `$ kubectl create -f my-dep-svc.yaml `
+
+#### Conclusion
+In this article, we showed how to create a complete, end-to-end continuous deployment (CD) pipeline with Amazon ECR and AWS CodePipeline.
+
