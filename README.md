@@ -4,11 +4,13 @@
 
 The following content will walk you through the steps to deploy a simple application when developers commit the source code.
 
-CodeCommit is AWS managed Git service.
+CodeCommit is AWS managed Git service. It will automatically encrypt your files in transit and at-rest. 
 
 CodeBuild is AWS managed build service. It is referred as a Continuous Integration tool. It will get the source code from the source provider and run them in a container for us. 
 
-CodePipeline is AWS managed deployment pipeline service. It is a CD pipeline orchestrator. We don't need to give scripts to run instead give it as a sequence of actions, which are links to other services. 
+CodePipeline is AWS managed deployment pipeline service. It is a CD pipeline orchestrator. We don't need to give scripts to run instead give it as a sequence of actions, which are links to other services.
+
+AWS ECR is AWS managed docker registry service. We can use the docker CLIs to push, pull and manage images. It will transfer the container images over HTTPs and automatically encrypt the images at-rest. 
 
 This is a basic CI/CD flow to demonstrate how to deploy a simple application when developers commit the source code.
 
